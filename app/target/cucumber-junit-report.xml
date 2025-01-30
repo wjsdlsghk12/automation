@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="88.511" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Check app launch when link is clicked" name="Access the Instagram test page (https://dev.blog.airbridge.io/sdk-qa/) and click the (PlayStore) link. Check whether the ablog app runs when clicked" time="53.527">
+<system-out><![CDATA[
+When Add "https://dev.blog.airbridge.io/sdk-qa/" link to your profile.......passed
+And Click on link...........................................................passed
+And "PlayStore" link click..................................................passed
+And Go to external app Continue Click.......................................passed
+And ttt.....................................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="DeepLink Check" name="When you click the Instagram link (https://go.ab180.co/8vpfwh), check if it moves to the store (ablog)." time="34.873">
+<failure type="java.lang.Error" message="Store page did not open.">
+<![CDATA[java.lang.Error: Store page did not open.
+	at org.example.app.steps.LoginSteps.theUserShouldBeLoggedInSuccessfully(LoginSteps.java:57)
+	at ?.Go to the App Store and make sure you are directed to the ablog installation page.(file:///E:/jihye/potpolio/prac3/app/src/test/resources/features/DeepLink_Check.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+When Add "https://go.ab180.co/8vpfwh" link to your profile..................passed
+And Click on link...........................................................passed
+And Go to external app Continue Click.......................................passed
+Then Go to the App Store and make sure you are directed to the ablog installation page..failed
+]]></system-out>
+</testcase>
+</testsuite>
